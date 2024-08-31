@@ -5,3 +5,7 @@ insert into Patients (patient_id, patient_name, conditions) values ('2', 'Alice'
 insert into Patients (patient_id, patient_name, conditions) values ('3', 'Bob', 'DIAB100 MYOP')
 insert into Patients (patient_id, patient_name, conditions) values ('4', 'George', 'ACNE DIAB100')
 insert into Patients (patient_id, patient_name, conditions) values ('5', 'Alain', 'DIAB201')
+
+select *
+from patients
+where conditions like '% DAIB1%' or conditions like 'DAIB1%'
